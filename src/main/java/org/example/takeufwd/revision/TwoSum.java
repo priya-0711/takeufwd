@@ -11,7 +11,7 @@ public class TwoSum {
     }
     public static void twoSum(int[] nums,int target) {
         Map<Integer,Integer> map = new HashMap<>();
-        int[] res = new int[2];
+        int[] res = new int[]{-1,-1};
         for(int i=0;i<nums.length;i++) {
             if(!map.containsKey(target - nums[i])) {
                 map.put(nums[i],i); //1,0  / 2,1 /

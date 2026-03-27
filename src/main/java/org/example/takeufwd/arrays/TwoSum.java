@@ -11,7 +11,7 @@ public class TwoSum {
         twoSum(arr,target);
     }
     public static void twoSum(int[]arr,int target) {
-        int outputArr[] = new int[2];
+        int outputArr[] = new int[]{-1,-1};
         Map<Integer,Integer> hmap =new HashMap<>();
         for(int i=0;i<arr.length;i++) {
             if (!hmap.containsKey(target - arr[i])) {
