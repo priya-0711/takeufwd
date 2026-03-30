@@ -10,8 +10,7 @@ public class MaxRepeatingElement {
     public static void main(String[] args) {
         int nums[] = new int[]{4,4,2,4,3,4,4,3,2,4};
         int N = nums.length;
-        majorityEleNBy2(nums,N);
-        System.out.println(Integer.MIN_VALUE);
+        System.out.println(majorityEleNBy2(nums,N));
     }
     public static int majorityEleNBy2 (int[]nums,int N) {
         // JAVA 8

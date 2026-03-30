@@ -8,8 +8,8 @@ public class BuyAndSell {
     public static int buyAndSell(int[]arr) {
         int max=0; int min = Integer.MAX_VALUE;
         for(int i=0;i<arr.length;i++) {
-            min = Math.min(min,arr[i]);
-           max = Math.max(max,arr[i]-min);
+            min = Math.min(min,arr[i]); //1
+           max = Math.max(max,arr[i]-min); //4
         }
 
         return max;

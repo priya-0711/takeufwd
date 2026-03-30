@@ -1,6 +1,7 @@
 package org.example.takeufwd.arrays;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class LargestElement {
     public static void main(String[] args) {
@@ -16,8 +17,10 @@ public class LargestElement {
         }
         System.out.println(max);  //TC:O(n)
 
-        //optimal way using sort method TC:O(nlogn)
+        //optimal way using sort method TC:O(nlogn) -- less efficient due to sorting
         Arrays.sort(arr);
         System.out.println(arr[arr.length-1]);
+        //java 8 -O(n)
+        Arrays.stream(arr).max().getAsInt();
     }
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ThreeSumThreePointer {
     public static void main(String[] args) {
-        int[]  nums  = new int[] {-1,0,1,2,-1,-4};
+        int[]  nums  = new int[] {-1,0,1,0};
         int target =0;
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
