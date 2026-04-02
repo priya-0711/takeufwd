@@ -9,7 +9,7 @@ public class CountSubArrSumEqualsK {
         Output: 2
         Explanation: The subarrays that sum up to 6 are [3, 1, 2] and [2, 4].
         */
-        int[] array = new int[]{3, 1, 2, 4}; int k = 6;
+        int[] array = new int[]{1,2,3}; int k = 3;
         int left=0,right=0,sum=0,count=0;
         while(left<=right && right<array.length) {
             if(sum<=k) {
